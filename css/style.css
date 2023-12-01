@@ -132,8 +132,7 @@ body {
     margin-left: 30px;
   }
   
-  .navbar a,
-  .navbar a:focus {
+  .navbar a,.navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -182,21 +181,7 @@ body {
 .social-links{
   animation: show 7s;
 }
-  .goo{
-    width: 150px;
-    height: 50px;
-    margin-top: 150px;
-    border: 3px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  .goo a{
-    text-decoration: none;
-    color: #fff;
-    
-  }
+
 
 
   .snow{
