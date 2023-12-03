@@ -8,6 +8,14 @@ body {
   display: flex;
   align-items: center;
 }
+@media(width <= 1200px){
+  body{
+    background:url(../img/bg-1.jpg) no-repeat 50%/cover;
+  }
+  .navbar{
+    display: none;
+  }
+}
 
 
   
