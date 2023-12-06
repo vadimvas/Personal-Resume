@@ -16,18 +16,21 @@ body {
     display: none;
   }
 }
-
-.counter-body{
-  width: 60px;
-  height: 60px;
-  border: 2px solid white;
+.counter-conteiner{
   position: absolute;
   top: 100px;
   right: 100px;
   display: flex;
+  align-items: center;
+
+}
+.counter-body{
+  width: 60px;
+  height: 60px; 
+  display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   overflow: hidden;
 }
 .counter{
@@ -41,7 +44,7 @@ body {
     transform: translateY(0px);
   }
   100%{
-    transform: translateY(-1567px);
+    transform: translateY(-2909px);
   }
 }
 
@@ -57,14 +60,18 @@ body {
   .container{
     margin-left: 10vw;
   }
+
+   .title1{
+    font-family: "Caveat";
+    font-weight: 700;
+  }
   
   .header h1 {
-    font-size: 48px;
+    font-size: 55px;
     margin: 30px 0 0 0;
     padding: 0;
-    line-height: 1;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rubik Bubbles";
+    letter-spacing: 4px;
     animation: show 3s;
   
   }
@@ -173,8 +180,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: "Caveat";
+    font-size: 22px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
