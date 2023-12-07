@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   width: 100%;
   height: 100vh;
@@ -41,15 +45,15 @@ body {
     transform: translateY(0px);
   }
   100%{
-    transform: translateY(-2909px);
+    transform: translateY(-2911px);
   }
 }
-@media(width <= 1200px){
+@media(width <= 992px){
   body{
     /* background:url(../img/bg-1.jpg) no-repeat 50%/cover; */
     background: black;
   }
-  .navbar-list{
+  .navbar{
     display: none;
   }
   .counter-conteiner{
@@ -131,6 +135,7 @@ body {
   
   #header .social-links {
     margin-top: 40px;
+    margin-left: 10vw;
     display: flex;
   }
   
@@ -154,13 +159,9 @@ body {
   
   @media (max-width: 992px) {
     #header h1 {
-      font-size: 30px;
+      font-size: 6vw;
     }
-  
-    #header h2 {
-      font-size: 20px;
-      line-height: 30px;
-    }
+ 
   
     #header .social-links {
       margin-top: 15px;
@@ -168,7 +169,7 @@ body {
   
     #header .container {
       margin-top: 160px;
-      margin-left: 0;
+      margin-left: 20px;
     }
     .container .title1{
       font-size: 30px;
@@ -243,14 +244,31 @@ body {
 .social-links{
   animation: show 7s;
 }
+
+/* Бургер кнопка */
 .burger{
   width: 40px;
   height: 40px;
-  border: 2px solid white;
   position: absolute;
   top: 10px;
   right: 20px;
   display: none;
+  position: relative;
+}
+.burger__line1,.burger__line2,.burger__line3{
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+}
+.burger__line1{
+  top: 0px;
+}
+.burger__line2{
+  top: 20px;
+}
+.burger__line3{
+  top: 40px;
 }
 
 
@@ -289,10 +307,9 @@ body {
       margin: 0;
       width: 40px;
       height: 40px;
-      border: 2px solid white;
       position: absolute;
       top: 10px;
-      right: 0;
+      right: 10px;
       display: block;
     }
   }
