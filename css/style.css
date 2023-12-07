@@ -8,14 +8,7 @@ body {
   display: flex;
   align-items: center;
 }
-@media(width <= 1200px){
-  body{
-    background:url(../img/bg-1.jpg) no-repeat 50%/cover;
-  }
-  .navbar{
-    display: none;
-  }
-}
+
 .counter-conteiner{
   position: absolute;
   top: 100px;
@@ -38,6 +31,10 @@ body {
   text-align: center;
   animation: start 3s forwards;
 }
+.title1{
+  font-family: "Caveat";
+  font-weight: 700;
+}
 
 @keyframes start{
   0%{
@@ -46,6 +43,37 @@ body {
   100%{
     transform: translateY(-2909px);
   }
+}
+@media(width <= 1200px){
+  body{
+    /* background:url(../img/bg-1.jpg) no-repeat 50%/cover; */
+    background: black;
+  }
+  .navbar-list{
+    display: none;
+  }
+  .counter-conteiner{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .counter-conteiner .title1{
+    font-size: 33px;
+  }
+  .counter-body{
+    width: 60px;
+    height: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    overflow: hidden;
+  }
+
+
 }
 
   
@@ -61,10 +89,7 @@ body {
     margin-left: 10vw;
   }
 
-   .title1{
-    font-family: "Caveat";
-    font-weight: 700;
-  }
+
   
   .header h1 {
     font-size: 55px;
@@ -129,7 +154,7 @@ body {
   
   @media (max-width: 992px) {
     #header h1 {
-      font-size: 36px;
+      font-size: 30px;
     }
   
     #header h2 {
@@ -142,10 +167,13 @@ body {
     }
   
     #header .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin-top: 160px;
+      margin-left: 0;
     }
+    .container .title1{
+      font-size: 30px;
+    }
+    
   }
   
 
@@ -215,6 +243,15 @@ body {
 .social-links{
   animation: show 7s;
 }
+.burger{
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: none;
+}
 
 
 
@@ -245,5 +282,17 @@ body {
     }
     100%{
       transform: translateY(101vh);
+    }
+  }
+  @media(max-width:992px){
+    .burger{
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid white;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      display: block;
     }
   }
