@@ -58,7 +58,7 @@ body {
   }
   .counter-conteiner{
     position: absolute;
-    top: 20px;
+    top: 60px;
     left: 10px;
     display: flex;
     align-items: center;
