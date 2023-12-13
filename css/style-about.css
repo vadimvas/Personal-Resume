@@ -92,8 +92,6 @@ body {
   .wrapper{
     width: 60%;
     height: 90%;
-    border: 2px solid white;
-  
   }
   h2{
     margin: 10px 0 10px 30px;
@@ -126,13 +124,8 @@ body {
   /*--------------------------------------------------------------
   # Skills
   --------------------------------------------------------------*/
-  .skills{
-    margin: 20px;
-  }
 
-  .skills-title{
 
-  }
 
   .skills-column{
   display: flex;
