@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    background:black;
+    color: #fff;
+    font-family: "Caveat";
+    font-size: 23px;
+ 
+  }
+
+.worckbloks{
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+}
+.workblock{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+.worckbloks a img{
+    width: 100%;
+    height: 100%;
+    
+}
