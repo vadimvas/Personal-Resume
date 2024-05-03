@@ -39,6 +39,9 @@ body {
   font-family: "Caveat";
   font-weight: 700;
 }
+.navbarmobile{
+  display: none;
+}
 
 @keyframes start{
   0%{
@@ -57,12 +60,13 @@ body {
     display: none;
   }
   .counter-conteiner{
-    position: absolute;
+    display: none;
+    /* position: absolute;
     top: 60px;
     left: 10px;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0; */
   }
   .counter-conteiner .title1{
     font-size: 33px;
@@ -81,6 +85,23 @@ body {
     text-align: center;
     animation: start1 3s forwards;
   }
+  .navbarmobile{
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    animation: start2 3s forwards;
+  }
+  .navbarmobile .navbar-list-mobile{
+    list-style: none;
+  }
+  .nav-link-mobile{
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+  }
   
 @keyframes start1{
   0%{
@@ -88,6 +109,15 @@ body {
   }
   100%{
     transform: translateY(-2885px);
+  }
+}
+  
+@keyframes start2{
+  0%{
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(0px);
   }
 }
 
@@ -324,6 +354,6 @@ body {
       position: absolute;
       top: 10px;
       right: 10px;
-      display: block;
+      display: none;
     }
   }
